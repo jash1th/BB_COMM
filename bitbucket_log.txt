@@ -1,0 +1,1728 @@
+
+2019-04-23 17:35:15,872 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Starting BitbucketServerApplication on GRNPRDBITBUCKET with PID 460 (/bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/app/WEB-INF/classes started by root in /bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/bin)
+2019-04-23 17:35:15,872 INFO  [main]  c.a.b.i.b.BitbucketServerApplication No active profile set, falling back to default profiles: default
+2019-04-23 17:35:17,598 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger Starting Bitbucket 5.13.1 (2c2ed6e built on Tue Aug 21 10:41:42 IST 2018)
+2019-04-23 17:35:17,598 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger JVM: Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 1.8.0_181-b13
+2019-04-23 17:35:19,896 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Started BitbucketServerApplication in 5.445 seconds (JVM running for 9.22)
+2019-04-23 17:35:25,273 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET
+2019-04-23 17:35:34,782 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET/shared
+2019-04-23 17:35:37,153 WARN  [spring-startup]  com.hazelcast.instance.Node [192.168.122.1]:5701 [root] [3.7.4-atlassian-43] No join method is enabled! Starting standalone.
+2019-04-23 17:35:58,604 INFO  [spring-startup]  c.a.s.i.hook.DefaultHookService Hook callback socket listening on 127.0.0.1:37904
+2019-04-23 17:36:00,980 WARN  [spring-startup]  c.a.s.i.s.g.b.DefaultGitBinaryHelper /bitbucket/GIT_HOME/git-2.2.0/git is version 2.2.0. Bitbucket 6.0 will require Git 2.11.0 or higher.
+2019-04-23 17:36:01,121 INFO  [spring-startup]  c.a.s.i.s.g.t.DefaultTranscodeServer Callback socket listening at 127.0.0.1:40428
+2019-04-23 17:36:30,078 WARN  [ThreadPoolAsyncTaskExecutor::Thread 21]  c.a.p.s.s.util.ProductFilterUtil Couldn't detect product, will use ProductFilter.ALL
+2019-04-23 17:36:37,139 INFO  [ThreadPoolAsyncTaskExecutor::Thread 53]  c.a.b.internal.ssh.server.SshServer Using MINA NIO service factory
+2019-04-23 17:36:45,897 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle com.atlassian.oauth.atlassian-oauth-service-provider-plugin; it does not exist
+2019-04-23 17:36:48,001 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.de_DE; it does not exist
+2019-04-23 17:36:48,015 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.fr_FR; it does not exist
+2019-04-23 17:36:48,025 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.ja_JP; it does not exist
+2019-04-23 17:36:48,215 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Starting SSH server on port 7999...
+2019-04-23 17:36:48,316 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Started SSH server successfully.
+2019-04-23 17:36:48,781 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for StartupChecksJob
+2019-04-23 17:36:48,786 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: SearchIndexCheck
+2019-04-23 17:36:48,873 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for ElasticsearchSynchronizeJob
+2019-04-23 17:36:48,874 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: KnownIssueCheck
+2019-04-23 17:36:48,880 INFO  [spring-startup]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Event queue processor has been started
+2019-04-23 17:36:48,880 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: AuthenticationCheck
+2019-04-23 17:36:49,228 INFO  [spring-startup]  c.a.s.internal.scm.PluginScmService Bitbucket is using /bitbucket/GIT_HOME/git-2.2.0/git version 2.2.0
+2019-04-23 17:36:49,346 INFO  [spring-startup]  c.a.s.i.hazelcast.HazelcastLifecycle Updating Hazelcast instance capabilities
+2019-04-23 17:36:49,756 WARN  [Caesium-1-1]  c.a.a.c.DefaultApplinkStatusService Unrecognized error while attempting to retrieve status of Application Link '3583e2f1-750d-3b1b-a657-755ad79ae29e'
+2019-04-23 17:36:53,585 INFO  [http-nio-17990-exec-1] @4I8QEFx1056x3x0 1o82f19 XXX.XX.XX.XXX "GET /mvc/home HTTP/1.1" c.a.s.i.a.DefaultRememberMeService Invalid remember-me cookie detected (expired) - canceling the cookie
+2019-04-23 17:36:58,786 INFO  [Caesium-1-3]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 3 search health checks
+2019-04-23 17:36:58,803 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:36:58,906 INFO  [pool-21-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:36:58,909 INFO  [pool-22-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:36:59,007 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:36:59,008 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:36:59,159 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:36:59,172 INFO  [Caesium-1-3]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT5M
+2019-04-23 17:36:59,174 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 4bcbe778-a6d8-412d-87e3-7c3524122724
+2019-04-23 17:37:07,177 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:37:07,183 INFO  [pool-23-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:37:07,695 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:37:07,695 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:37:07,697 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:37:07,698 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: ee30767b-839c-4787-a079-e3d05b557254
+2019-04-23 17:37:11,236 WARN  [sg:bootstrap-101]  org.eclipse.jgit.util.FS null
+2019-04-23 17:37:11,282 WARN  [sg:bootstrap-460]  org.eclipse.jgit.util.FS null
+2019-04-23 17:37:11,288 WARN  [sg:bootstrap-316]  org.eclipse.jgit.util.FS null
+2019-04-23 17:37:11,322 WARN  [sg:bootstrap-217]  org.eclipse.jgit.util.FS null
+2019-04-23 17:37:23,700 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:37:23,706 INFO  [pool-26-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:37:23,709 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:37:23,709 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:37:23,710 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:37:23,711 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 9c98e493-53b4-4871-a4db-1250d5b4d91d
+2019-04-23 17:37:55,714 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:37:55,718 INFO  [pool-27-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:37:55,719 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:37:55,719 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:37:55,721 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:37:55,721 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: e3f74369-66d6-4763-89ee-11b8b1a04e37
+2019-04-23 17:38:24,631 WARN  [http-nio-17990-exec-3] ctocm @4I8QEFx1057x22x0 1o82f19 XXX.XX.XX.XXX "GET /dashboard HTTP/1.1" com.atlassian.upm.pac.PacClientImpl Error when querying application info from MPAC: com.atlassian.marketplace.client.MpacException: org.apache.http.conn.ConnectTimeoutException: Connect to marketplace.atlassian.com:443 [marketplace.atlassian.com/52.44.244.254, marketplace.atlassian.com/34.193.88.221, marketplace.atlassian.com/35.168.52.211] failed: connect timed out
+2019-04-23 17:38:28,386 INFO  [http-nio-17990-exec-9] @4I8QEFx1058x28x0 XXX.XX.XX.XXX "GET /rest/api/latest/projects/K01A07_SCF/repos/scf_pilot/branches HTTP/1.1" c.a.s.i.a.DefaultRememberMeService Invalid remember-me cookie detected (expired) - canceling the cookie
+2019-04-23 17:38:38,018 WARN  [http-nio-17990-exec-3] ctocm @4I8QEFx1058x47x0 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.util.contentcache.ContentCache 43: Caching has been temporarily disabled because there is not enough free space on /data/BITBUCKET/caches/scm/43 (3644600320 bytes free)
+2019-04-23 17:38:59,723 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:38:59,737 INFO  [pool-28-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:38:59,740 ERROR [Caesium-1-3]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:38:59,740 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:38:59,745 ERROR [Caesium-1-3]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:38:59,745 WARN  [Caesium-1-3]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 58e1890d-27e4-46dc-92c8-8ca56ba866ec
+2019-04-23 17:40:45,820 WARN  [Caesium-1-1]  c.a.a.c.h.r.RemoteHashingInstructionsReader Unable to read remote instructions with key 'uid.onewayhash'.
+2019-04-23 17:40:45,820 WARN  [Caesium-1-1]  c.a.a.c.h.BcryptAnalyticsEmailHasher No instructions for hashing could be found.
+2019-04-23 17:41:07,747 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:41:07,752 INFO  [pool-29-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:41:07,753 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:41:07,753 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:41:07,754 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:41:07,754 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 05e603a8-e361-418f-a02a-7f2370c69728
+2019-04-23 17:41:38,622 ERROR [Caesium-1-4]  c.a.scheduler.core.JobLauncher Scheduled job with ID 'IndexingAnalyticsJob' failed
+rx.exceptions.OnErrorNotImplementedException: java.net.ConnectException: Connection refused
+	at rx.observables.BlockingObservable$8.call(BlockingObservable.java:642)
+	at rx.observables.BlockingObservable$8.call(BlockingObservable.java:639)
+	at rx.observables.BlockingObservable$9.onError(BlockingObservable.java:673)
+	at rx.internal.operators.NotificationLite.accept(NotificationLite.java:147)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:528)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:665)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:639)
+	at com.atlassian.bitbucket.internal.search.indexing.analytics.IndexingAnalyticsJob.runJob(IndexingAnalyticsJob.java:50)
+	at com.atlassian.scheduler.core.JobLauncher.runJob(JobLauncher.java:153)
+	at com.atlassian.scheduler.core.JobLauncher.launchAndBuildResponse(JobLauncher.java:118)
+	at com.atlassian.scheduler.core.JobLauncher.launch(JobLauncher.java:97)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.launchJob(CaesiumSchedulerService.java:443)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.executeClusteredJob(CaesiumSchedulerService.java:438)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.executeClusteredJobWithRecoveryGuard(CaesiumSchedulerService.java:462)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.executeQueuedJob(CaesiumSchedulerService.java:390)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService$1.consume(CaesiumSchedulerService.java:285)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService$1.consume(CaesiumSchedulerService.java:282)
+	at com.atlassian.scheduler.caesium.impl.SchedulerQueueWorker.executeJob(SchedulerQueueWorker.java:65)
+	at com.atlassian.scheduler.caesium.impl.SchedulerQueueWorker.executeNextJob(SchedulerQueueWorker.java:59)
+	at com.atlassian.scheduler.caesium.impl.SchedulerQueueWorker.run(SchedulerQueueWorker.java:34)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:507)
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	... 1 common frames omitted
+2019-04-23 17:41:59,172 INFO  [Caesium-1-2]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 2 search health checks
+2019-04-23 17:41:59,179 INFO  [pool-30-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:41:59,185 INFO  [Caesium-1-2]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT5M
+2019-04-23 17:45:23,756 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:45:23,760 INFO  [pool-31-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:45:23,762 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:45:23,762 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:45:23,763 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:45:23,763 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 0461b186-6da4-4845-be54-89067d09119e
+2019-04-23 17:46:59,185 INFO  [Caesium-1-1]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 2 search health checks
+2019-04-23 17:46:59,189 INFO  [pool-32-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:46:59,199 INFO  [Caesium-1-1]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT10M
+2019-04-23 17:47:33,904 INFO  [io-pump:thread-9] ctocm @4I8QEFx1058x47x0 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.s.i.w.filters.StreamGuardFilter The remote client has aborted the connection
+2019-04-23 17:48:07,952 ERROR [http-nio-17990-exec-7]  o.a.c.c.C.[.[.[/].[scmServlet] Servlet.service() for servlet [scmServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: [/data/BITBUCKET/shared/data/repositories/8] does not exist
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:145)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.existsAndIsDirectory(AbstractCommandBuilder.java:518)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.directoryExistsOrIsNull(AbstractCommandBuilder.java:448)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.<init>(AbstractCommandBuilder.java:114)
+	at com.atlassian.bitbucket.scm.AbstractScmCommandBuilder.<init>(AbstractScmCommandBuilder.java:58)
+	at com.atlassian.stash.internal.scm.git.command.DefaultGitScmCommandBuilder.<init>(DefaultGitScmCommandBuilder.java:131)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:40)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:18)
+	at com.atlassian.stash.internal.scm.git.AbstractGitRepositoryScmRequest.builder(AbstractGitRepositoryScmRequest.java:41)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.createCommandBuilder(GitSmartRequest.java:119)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.handleRequest(GitSmartRequest.java:69)
+	at com.atlassian.stash.internal.scm.git.protocol.http.HttpOtherRead.handleRequest(HttpOtherRead.java:17)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.handleRequestThrottled(ThrottledScmRequestFactory.java:88)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.invoke(ThrottledScmRequestFactory.java:73)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleScmRequest(ScmServlet.java:118)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleRequest(ScmServlet.java:70)
+	at org.springframework.web.context.support.HttpRequestHandlerServlet.service(HttpRequestHandlerServlet.java:67)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.analytics.client.filter.UniversalAnalyticsFilter.doFilter(UniversalAnalyticsFilter.java:92)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.scope.ApiScopingFilter.doFilter(ApiScopingFilter.java:81)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.onSuccess(StashAuthenticationFilter.java:219)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.doFilter(StashAuthenticationFilter.java:100)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doInsideSpringSecurityChain(BeforeLoginPluginAuthenticationFilter.java:112)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:75)
+	at com.atlassian.security.auth.trustedapps.filter.TrustedApplicationsFilter.doFilter(TrustedApplicationsFilter.java:94)
+	at com.atlassian.oauth.serviceprovider.internal.servlet.OAuthFilter.doFilter(OAuthFilter.java:67)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.oauth2.DefaultSalAuthenticationFilter.doFilter(DefaultSalAuthenticationFilter.java:69)
+	at com.atlassian.plugin.connect.plugin.auth.user.ThreeLeggedAuthFilter.doFilter(ThreeLeggedAuthFilter.java:109)
+	at com.atlassian.jwt.internal.servlet.JwtAuthFilter.doFilter(JwtAuthFilter.java:32)
+	at com.atlassian.analytics.client.filter.DefaultAnalyticsFilter.doFilter(DefaultAnalyticsFilter.java:38)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.bitbucket.internal.scm.git.lfs.servlet.filter.GitLfsLockingFilter.doFilter(GitLfsLockingFilter.java:50)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doBeforeBeforeLoginFilters(BeforeLoginPluginAuthenticationFilter.java:90)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:73)
+	at com.atlassian.stash.internal.request.DefaultRequestManager.doAsRequest(DefaultRequestManager.java:89)
+	at com.atlassian.stash.internal.hazelcast.ConfigurableWebFilter.doFilter(ConfigurableWebFilter.java:38)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 226 frames trimmed
+2019-04-23 17:48:07,959 ERROR [http-nio-17990-exec-7]  o.a.c.c.C.[.[.[/].[scmServlet] Servlet.service() for servlet [scmServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: [/data/BITBUCKET/shared/data/repositories/8] does not exist
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:145)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.existsAndIsDirectory(AbstractCommandBuilder.java:518)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.directoryExistsOrIsNull(AbstractCommandBuilder.java:448)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.<init>(AbstractCommandBuilder.java:114)
+	at com.atlassian.bitbucket.scm.AbstractScmCommandBuilder.<init>(AbstractScmCommandBuilder.java:58)
+	at com.atlassian.stash.internal.scm.git.command.DefaultGitScmCommandBuilder.<init>(DefaultGitScmCommandBuilder.java:131)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:40)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:18)
+	at com.atlassian.stash.internal.scm.git.AbstractGitRepositoryScmRequest.builder(AbstractGitRepositoryScmRequest.java:41)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.createCommandBuilder(GitSmartRequest.java:119)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.handleRequest(GitSmartRequest.java:69)
+	at com.atlassian.stash.internal.scm.git.protocol.http.HttpOtherRead.handleRequest(HttpOtherRead.java:17)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.handleRequestThrottled(ThrottledScmRequestFactory.java:88)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.invoke(ThrottledScmRequestFactory.java:73)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleScmRequest(ScmServlet.java:118)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleRequest(ScmServlet.java:70)
+	at org.springframework.web.context.support.HttpRequestHandlerServlet.service(HttpRequestHandlerServlet.java:67)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.analytics.client.filter.UniversalAnalyticsFilter.doFilter(UniversalAnalyticsFilter.java:92)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.scope.ApiScopingFilter.doFilter(ApiScopingFilter.java:81)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.onSuccess(StashAuthenticationFilter.java:219)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.doFilter(StashAuthenticationFilter.java:100)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doInsideSpringSecurityChain(BeforeLoginPluginAuthenticationFilter.java:112)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:75)
+	at com.atlassian.security.auth.trustedapps.filter.TrustedApplicationsFilter.doFilter(TrustedApplicationsFilter.java:94)
+	at com.atlassian.oauth.serviceprovider.internal.servlet.OAuthFilter.doFilter(OAuthFilter.java:67)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.oauth2.DefaultSalAuthenticationFilter.doFilter(DefaultSalAuthenticationFilter.java:69)
+	at com.atlassian.plugin.connect.plugin.auth.user.ThreeLeggedAuthFilter.doFilter(ThreeLeggedAuthFilter.java:109)
+	at com.atlassian.jwt.internal.servlet.JwtAuthFilter.doFilter(JwtAuthFilter.java:32)
+	at com.atlassian.analytics.client.filter.DefaultAnalyticsFilter.doFilter(DefaultAnalyticsFilter.java:38)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.bitbucket.internal.scm.git.lfs.servlet.filter.GitLfsLockingFilter.doFilter(GitLfsLockingFilter.java:50)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doBeforeBeforeLoginFilters(BeforeLoginPluginAuthenticationFilter.java:90)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:73)
+	at com.atlassian.stash.internal.request.DefaultRequestManager.doAsRequest(DefaultRequestManager.java:89)
+	at com.atlassian.stash.internal.hazelcast.ConfigurableWebFilter.doFilter(ConfigurableWebFilter.java:38)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 226 frames trimmed
+2019-04-23 17:48:07,960 ERROR [http-nio-17990-exec-7]  o.a.c.c.C.[.[.[/].[scmServlet] Servlet.service() for servlet [scmServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: [/data/BITBUCKET/shared/data/repositories/8] does not exist
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:145)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.existsAndIsDirectory(AbstractCommandBuilder.java:518)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.directoryExistsOrIsNull(AbstractCommandBuilder.java:448)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.<init>(AbstractCommandBuilder.java:114)
+	at com.atlassian.bitbucket.scm.AbstractScmCommandBuilder.<init>(AbstractScmCommandBuilder.java:58)
+	at com.atlassian.stash.internal.scm.git.command.DefaultGitScmCommandBuilder.<init>(DefaultGitScmCommandBuilder.java:131)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:40)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:18)
+	at com.atlassian.stash.internal.scm.git.AbstractGitRepositoryScmRequest.builder(AbstractGitRepositoryScmRequest.java:41)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.createCommandBuilder(GitSmartRequest.java:119)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.handleRequest(GitSmartRequest.java:69)
+	at com.atlassian.stash.internal.scm.git.protocol.http.HttpOtherRead.handleRequest(HttpOtherRead.java:17)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.handleRequestThrottled(ThrottledScmRequestFactory.java:88)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.invoke(ThrottledScmRequestFactory.java:73)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleScmRequest(ScmServlet.java:118)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleRequest(ScmServlet.java:70)
+	at org.springframework.web.context.support.HttpRequestHandlerServlet.service(HttpRequestHandlerServlet.java:67)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.analytics.client.filter.UniversalAnalyticsFilter.doFilter(UniversalAnalyticsFilter.java:92)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.scope.ApiScopingFilter.doFilter(ApiScopingFilter.java:81)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.onSuccess(StashAuthenticationFilter.java:219)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.doFilter(StashAuthenticationFilter.java:100)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doInsideSpringSecurityChain(BeforeLoginPluginAuthenticationFilter.java:112)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:75)
+	at com.atlassian.security.auth.trustedapps.filter.TrustedApplicationsFilter.doFilter(TrustedApplicationsFilter.java:94)
+	at com.atlassian.oauth.serviceprovider.internal.servlet.OAuthFilter.doFilter(OAuthFilter.java:67)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.oauth2.DefaultSalAuthenticationFilter.doFilter(DefaultSalAuthenticationFilter.java:69)
+	at com.atlassian.plugin.connect.plugin.auth.user.ThreeLeggedAuthFilter.doFilter(ThreeLeggedAuthFilter.java:109)
+	at com.atlassian.jwt.internal.servlet.JwtAuthFilter.doFilter(JwtAuthFilter.java:32)
+	at com.atlassian.analytics.client.filter.DefaultAnalyticsFilter.doFilter(DefaultAnalyticsFilter.java:38)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.bitbucket.internal.scm.git.lfs.servlet.filter.GitLfsLockingFilter.doFilter(GitLfsLockingFilter.java:50)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doBeforeBeforeLoginFilters(BeforeLoginPluginAuthenticationFilter.java:90)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:73)
+	at com.atlassian.stash.internal.request.DefaultRequestManager.doAsRequest(DefaultRequestManager.java:89)
+	at com.atlassian.stash.internal.hazelcast.ConfigurableWebFilter.doFilter(ConfigurableWebFilter.java:38)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 226 frames trimmed
+2019-04-23 17:48:07,960 ERROR [http-nio-17990-exec-7]  o.a.c.c.C.[.[.[/].[scmServlet] Servlet.service() for servlet [scmServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: [/data/BITBUCKET/shared/data/repositories/8] does not exist
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:145)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.existsAndIsDirectory(AbstractCommandBuilder.java:518)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.directoryExistsOrIsNull(AbstractCommandBuilder.java:448)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.<init>(AbstractCommandBuilder.java:114)
+	at com.atlassian.bitbucket.scm.AbstractScmCommandBuilder.<init>(AbstractScmCommandBuilder.java:58)
+	at com.atlassian.stash.internal.scm.git.command.DefaultGitScmCommandBuilder.<init>(DefaultGitScmCommandBuilder.java:131)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:40)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:18)
+	at com.atlassian.stash.internal.scm.git.AbstractGitRepositoryScmRequest.builder(AbstractGitRepositoryScmRequest.java:41)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.createCommandBuilder(GitSmartRequest.java:119)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.handleRequest(GitSmartRequest.java:69)
+	at com.atlassian.stash.internal.scm.git.protocol.http.HttpOtherRead.handleRequest(HttpOtherRead.java:17)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.handleRequestThrottled(ThrottledScmRequestFactory.java:88)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.invoke(ThrottledScmRequestFactory.java:73)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleScmRequest(ScmServlet.java:118)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleRequest(ScmServlet.java:70)
+	at org.springframework.web.context.support.HttpRequestHandlerServlet.service(HttpRequestHandlerServlet.java:67)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.analytics.client.filter.UniversalAnalyticsFilter.doFilter(UniversalAnalyticsFilter.java:92)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.scope.ApiScopingFilter.doFilter(ApiScopingFilter.java:81)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.onSuccess(StashAuthenticationFilter.java:219)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.doFilter(StashAuthenticationFilter.java:100)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doInsideSpringSecurityChain(BeforeLoginPluginAuthenticationFilter.java:112)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:75)
+	at com.atlassian.security.auth.trustedapps.filter.TrustedApplicationsFilter.doFilter(TrustedApplicationsFilter.java:94)
+	at com.atlassian.oauth.serviceprovider.internal.servlet.OAuthFilter.doFilter(OAuthFilter.java:67)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.oauth2.DefaultSalAuthenticationFilter.doFilter(DefaultSalAuthenticationFilter.java:69)
+	at com.atlassian.plugin.connect.plugin.auth.user.ThreeLeggedAuthFilter.doFilter(ThreeLeggedAuthFilter.java:109)
+	at com.atlassian.jwt.internal.servlet.JwtAuthFilter.doFilter(JwtAuthFilter.java:32)
+	at com.atlassian.analytics.client.filter.DefaultAnalyticsFilter.doFilter(DefaultAnalyticsFilter.java:38)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.bitbucket.internal.scm.git.lfs.servlet.filter.GitLfsLockingFilter.doFilter(GitLfsLockingFilter.java:50)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doBeforeBeforeLoginFilters(BeforeLoginPluginAuthenticationFilter.java:90)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:73)
+	at com.atlassian.stash.internal.request.DefaultRequestManager.doAsRequest(DefaultRequestManager.java:89)
+	at com.atlassian.stash.internal.hazelcast.ConfigurableWebFilter.doFilter(ConfigurableWebFilter.java:38)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 226 frames trimmed
+2019-04-23 17:48:07,961 ERROR [http-nio-17990-exec-7]  o.a.c.c.C.[.[.[/].[scmServlet] Servlet.service() for servlet [scmServlet] in context with path [] threw exception
+java.lang.IllegalArgumentException: [/data/BITBUCKET/shared/data/repositories/8] does not exist
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:145)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.existsAndIsDirectory(AbstractCommandBuilder.java:518)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.directoryExistsOrIsNull(AbstractCommandBuilder.java:448)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.<init>(AbstractCommandBuilder.java:114)
+	at com.atlassian.bitbucket.scm.AbstractScmCommandBuilder.<init>(AbstractScmCommandBuilder.java:58)
+	at com.atlassian.stash.internal.scm.git.command.DefaultGitScmCommandBuilder.<init>(DefaultGitScmCommandBuilder.java:131)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:40)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:18)
+	at com.atlassian.stash.internal.scm.git.AbstractGitRepositoryScmRequest.builder(AbstractGitRepositoryScmRequest.java:41)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.createCommandBuilder(GitSmartRequest.java:119)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.handleRequest(GitSmartRequest.java:69)
+	at com.atlassian.stash.internal.scm.git.protocol.http.HttpOtherRead.handleRequest(HttpOtherRead.java:17)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.handleRequestThrottled(ThrottledScmRequestFactory.java:88)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.invoke(ThrottledScmRequestFactory.java:73)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleScmRequest(ScmServlet.java:118)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleRequest(ScmServlet.java:70)
+	at org.springframework.web.context.support.HttpRequestHandlerServlet.service(HttpRequestHandlerServlet.java:67)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.analytics.client.filter.UniversalAnalyticsFilter.doFilter(UniversalAnalyticsFilter.java:92)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.scope.ApiScopingFilter.doFilter(ApiScopingFilter.java:81)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.onSuccess(StashAuthenticationFilter.java:219)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.doFilter(StashAuthenticationFilter.java:100)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doInsideSpringSecurityChain(BeforeLoginPluginAuthenticationFilter.java:112)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:75)
+	at com.atlassian.security.auth.trustedapps.filter.TrustedApplicationsFilter.doFilter(TrustedApplicationsFilter.java:94)
+	at com.atlassian.oauth.serviceprovider.internal.servlet.OAuthFilter.doFilter(OAuthFilter.java:67)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.oauth2.DefaultSalAuthenticationFilter.doFilter(DefaultSalAuthenticationFilter.java:69)
+	at com.atlassian.plugin.connect.plugin.auth.user.ThreeLeggedAuthFilter.doFilter(ThreeLeggedAuthFilter.java:109)
+	at com.atlassian.jwt.internal.servlet.JwtAuthFilter.doFilter(JwtAuthFilter.java:32)
+	at com.atlassian.analytics.client.filter.DefaultAnalyticsFilter.doFilter(DefaultAnalyticsFilter.java:38)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.bitbucket.internal.scm.git.lfs.servlet.filter.GitLfsLockingFilter.doFilter(GitLfsLockingFilter.java:50)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doBeforeBeforeLoginFilters(BeforeLoginPluginAuthenticationFilter.java:90)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:73)
+	at com.atlassian.stash.internal.request.DefaultRequestManager.doAsRequest(DefaultRequestManager.java:89)
+	at com.atlassian.stash.internal.hazelcast.ConfigurableWebFilter.doFilter(ConfigurableWebFilter.java:38)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 226 frames trimmed
+2019-04-23 17:48:07,974 ERROR [http-nio-17990-exec-7] @4I8QEFx1068x154x0 XXX.XX.XX.XXX "GET /mvc/error500 HTTP/1.1" c.a.s.i.web.ErrorPageController There was an unhandled exception loading [/scm/ctoo/scf_branch.git/info/refs]
+java.lang.IllegalArgumentException: [/data/BITBUCKET/shared/data/repositories/8] does not exist
+	at com.google.common.base.Preconditions.checkArgument(Preconditions.java:145)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.existsAndIsDirectory(AbstractCommandBuilder.java:518)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.directoryExistsOrIsNull(AbstractCommandBuilder.java:448)
+	at com.atlassian.bitbucket.scm.AbstractCommandBuilder.<init>(AbstractCommandBuilder.java:114)
+	at com.atlassian.bitbucket.scm.AbstractScmCommandBuilder.<init>(AbstractScmCommandBuilder.java:58)
+	at com.atlassian.stash.internal.scm.git.command.DefaultGitScmCommandBuilder.<init>(DefaultGitScmCommandBuilder.java:131)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:40)
+	at com.atlassian.stash.internal.scm.git.DefaultGitCommandBuilderFactory.builder(DefaultGitCommandBuilderFactory.java:18)
+	at com.atlassian.stash.internal.scm.git.AbstractGitRepositoryScmRequest.builder(AbstractGitRepositoryScmRequest.java:41)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.createCommandBuilder(GitSmartRequest.java:119)
+	at com.atlassian.stash.internal.scm.git.protocol.http.GitSmartRequest.handleRequest(GitSmartRequest.java:69)
+	at com.atlassian.stash.internal.scm.git.protocol.http.HttpOtherRead.handleRequest(HttpOtherRead.java:17)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.handleRequestThrottled(ThrottledScmRequestFactory.java:88)
+	at com.atlassian.bitbucket.scm.throttle.ThrottledScmRequestFactory$ThrottlingInvocationHandler.invoke(ThrottledScmRequestFactory.java:73)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleScmRequest(ScmServlet.java:118)
+	at com.atlassian.stash.internal.scm.ScmServlet.handleRequest(ScmServlet.java:70)
+	at org.springframework.web.context.support.HttpRequestHandlerServlet.service(HttpRequestHandlerServlet.java:67)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.applinks.core.rest.context.ContextFilter.doFilter(ContextFilter.java:24)
+	at com.atlassian.analytics.client.filter.UniversalAnalyticsFilter.doFilter(UniversalAnalyticsFilter.java:92)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.scope.ApiScopingFilter.doFilter(ApiScopingFilter.java:81)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.onSuccess(StashAuthenticationFilter.java:219)
+	at com.atlassian.stash.internal.spring.security.StashAuthenticationFilter.doFilter(StashAuthenticationFilter.java:100)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doInsideSpringSecurityChain(BeforeLoginPluginAuthenticationFilter.java:112)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:75)
+	at com.atlassian.security.auth.trustedapps.filter.TrustedApplicationsFilter.doFilter(TrustedApplicationsFilter.java:94)
+	at com.atlassian.oauth.serviceprovider.internal.servlet.OAuthFilter.doFilter(OAuthFilter.java:67)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.plugin.connect.plugin.auth.oauth2.DefaultSalAuthenticationFilter.doFilter(DefaultSalAuthenticationFilter.java:69)
+	at com.atlassian.plugin.connect.plugin.auth.user.ThreeLeggedAuthFilter.doFilter(ThreeLeggedAuthFilter.java:109)
+	at com.atlassian.jwt.internal.servlet.JwtAuthFilter.doFilter(JwtAuthFilter.java:32)
+	at com.atlassian.analytics.client.filter.DefaultAnalyticsFilter.doFilter(DefaultAnalyticsFilter.java:38)
+	at com.atlassian.analytics.client.filter.AbstractHttpFilter.doFilter(AbstractHttpFilter.java:39)
+	at com.atlassian.bitbucket.internal.scm.git.lfs.servlet.filter.GitLfsLockingFilter.doFilter(GitLfsLockingFilter.java:50)
+	at com.atlassian.stash.internal.spring.lifecycle.LifecycleJohnsonServletFilterModuleContainerFilter.doFilter(LifecycleJohnsonServletFilterModuleContainerFilter.java:42)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doBeforeBeforeLoginFilters(BeforeLoginPluginAuthenticationFilter.java:90)
+	at com.atlassian.stash.internal.web.auth.BeforeLoginPluginAuthenticationFilter.doFilter(BeforeLoginPluginAuthenticationFilter.java:73)
+	at com.atlassian.stash.internal.request.DefaultRequestManager.doAsRequest(DefaultRequestManager.java:89)
+	at com.atlassian.stash.internal.hazelcast.ConfigurableWebFilter.doFilter(ConfigurableWebFilter.java:38)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 226 frames trimmed
+2019-04-23 17:48:32,648 INFO  [http-nio-17990-exec-4] ctocm @4I8QEFx1068x165x0 1o82f19 XXX.XX.XX.XXX "GET /projects/CTOO/repos/scf_branch/settings HTTP/1.1" c.a.s.i.w.a.RepositoryAdminController Failed to resolve default branch. Cause: No default branch is defined
+2019-04-23 17:49:02,425 INFO  [http-nio-17990-exec-10] ctocm @4I8QEFx1069x172x0 1o82f19 XXX.XX.XX.XXX "GET /projects/CTOO/repos/scf_branch/settings HTTP/1.1" c.a.s.i.w.a.RepositoryAdminController Failed to resolve default branch. Cause: No default branch is defined
+2019-04-23 17:49:06,284 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 8) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 17:49:06,289 INFO  [threadpool:thread-3] ctocm @4I8QEFx1069x176x0 1o82f19 XXX.XX.XX.XXX "DELETE /projects/CTOO/repos/scf_branch HTTP/1.1" c.a.s.i.s.g.c.DeleteRepositoryCommand Successfully deleted repository directory /data/BITBUCKET/shared/data/repositories/8
+2019-04-23 17:49:06,290 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=8}, retries=0}, retrying in 60 s
+2019-04-23 17:49:54,790 WARN  [http-nio-17990-exec-8] ctocm @4I8QEFx1069x234x0 XXX.XX.XX.XXX "POST /scm/ksdtbcs/k1_dtbcs.git/git-upload-pack HTTP/1.1" c.a.util.contentcache.ContentCache 126: Caching has been temporarily disabled because there is not enough free space on /data/BITBUCKET/caches/scm/126 (3639443456 bytes free)
+2019-04-23 17:50:06,294 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 8) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 17:50:06,295 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=8}, retries=1}, retrying in 120 s
+2019-04-23 17:50:39,506 INFO  [io-pump:thread-8] ctocm @4I8QEFx1069x234x0 XXX.XX.XX.XXX "POST /scm/ksdtbcs/k1_dtbcs.git/git-upload-pack HTTP/1.1" c.a.s.i.w.filters.StreamGuardFilter The remote client has aborted the connection
+2019-04-23 17:52:06,299 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 8) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 17:52:06,299 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=8}, retries=2}, retrying in 240 s
+2019-04-23 17:53:55,766 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:53:55,771 INFO  [pool-33-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:53:55,774 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:53:55,774 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:53:55,777 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:53:55,777 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 097096fd-1db5-4ea3-ae3f-30f7e6d3ce2a
+2019-04-23 17:53:58,086 INFO  [Thread-4]  c.a.b.i.boot.log.BuildInfoLogger Bitbucket 5.13.1 has shut down
+2019-04-23 17:54:00,244 INFO  [localhost-startStop-2]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker thread has been shut down
+2019-04-23 17:54:01,184 INFO  [Gemini Blueprint context shutdown thread1]  c.a.b.internal.ssh.server.SshServer Stopping SSH server...
+2019-04-23 17:54:01,200 INFO  [Gemini Blueprint context shutdown thread1]  c.a.b.internal.ssh.server.SshServer Stopped SSH server successfully.
+2019-04-23 17:54:01,788 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'rome.rome-1.0', not ACTIVE
+2019-04-23 17:54:01,789 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'org.scala-lang.scala-library-2.12.1.v20161205-104509-VFINAL-2787b47', not ACTIVE
+2019-04-23 17:54:01,789 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.springsource.org.jdom-1.1.0', not ACTIVE
+2019-04-23 17:54:01,789 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.springsource.net.jcip.annotations-1.0.0', not ACTIVE
+2019-04-23 17:54:01,800 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.util.concurrent.atlassian-util-concurrent-3.0.0', not ACTIVE
+2019-04-23 17:54:01,803 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.plugin.atlassian-spring-scanner-runtime', not ACTIVE
+2019-04-23 17:54:01,803 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.plugin.atlassian-spring-scanner-annotation', not ACTIVE
+2019-04-23 17:54:01,805 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.bundles.json-20070829.0.0.1', not ACTIVE
+2019-04-23 17:54:01,880 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 17:54:01,882 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 17:54:01,886 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 17:54:01,936 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 17:54:01,937 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 17:54:01,941 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 17:54:01,947 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 17:54:01,949 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 17:54:02,058 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET/shared
+2019-04-23 17:54:02,579 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET
+2019-04-23 17:55:46,519 INFO  [main]  o.s.boot.SpringApplication 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.12.RELEASE)
+
+
+2019-04-23 17:55:46,846 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Starting BitbucketServerApplication on GRNPRDBITBUCKET with PID 1809 (/bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/app/WEB-INF/classes started by root in /bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/bin)
+2019-04-23 17:55:46,846 INFO  [main]  c.a.b.i.b.BitbucketServerApplication No active profile set, falling back to default profiles: default
+2019-04-23 17:55:48,307 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger Starting Bitbucket 5.13.1 (2c2ed6e built on Tue Aug 21 10:41:42 IST 2018)
+2019-04-23 17:55:48,307 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger JVM: Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 1.8.0_181-b13
+2019-04-23 17:55:50,225 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Started BitbucketServerApplication in 4.679 seconds (JVM running for 7.962)
+2019-04-23 17:55:54,940 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET
+2019-04-23 17:56:00,646 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET/shared
+2019-04-23 17:56:02,785 WARN  [spring-startup]  com.hazelcast.instance.Node [192.168.122.1]:5701 [root] [3.7.4-atlassian-43] No join method is enabled! Starting standalone.
+2019-04-23 17:56:23,561 INFO  [spring-startup]  c.a.s.i.hook.DefaultHookService Hook callback socket listening on 127.0.0.1:40833
+2019-04-23 17:56:25,514 WARN  [spring-startup]  c.a.s.i.s.g.b.DefaultGitBinaryHelper /bitbucket/GIT_HOME/git-2.2.0/git is version 2.2.0. Bitbucket 6.0 will require Git 2.11.0 or higher.
+2019-04-23 17:56:25,592 INFO  [spring-startup]  c.a.s.i.s.g.t.DefaultTranscodeServer Callback socket listening at 127.0.0.1:43551
+2019-04-23 17:56:38,041 WARN  [ThreadPoolAsyncTaskExecutor::Thread 59]  c.a.p.s.s.util.ProductFilterUtil Couldn't detect product, will use ProductFilter.ALL
+2019-04-23 17:56:44,383 INFO  [ThreadPoolAsyncTaskExecutor::Thread 64]  c.a.b.internal.ssh.server.SshServer Using MINA NIO service factory
+2019-04-23 17:56:51,683 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle com.atlassian.oauth.atlassian-oauth-service-provider-plugin; it does not exist
+2019-04-23 17:56:53,356 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.de_DE; it does not exist
+2019-04-23 17:56:53,366 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.fr_FR; it does not exist
+2019-04-23 17:56:53,376 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.ja_JP; it does not exist
+2019-04-23 17:56:53,411 INFO  [spring-startup]  c.a.s.internal.scm.PluginScmService Bitbucket is using /bitbucket/GIT_HOME/git-2.2.0/git version 2.2.0
+2019-04-23 17:56:53,729 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Starting SSH server on port 7999...
+2019-04-23 17:56:53,862 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Started SSH server successfully.
+2019-04-23 17:56:54,316 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: AuthenticationCheck
+2019-04-23 17:56:54,316 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: KnownIssueCheck
+2019-04-23 17:56:54,338 INFO  [spring-startup]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Event queue processor has been started
+2019-04-23 17:56:54,339 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for StartupChecksJob
+2019-04-23 17:56:54,463 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: SearchIndexCheck
+2019-04-23 17:56:54,466 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for ElasticsearchSynchronizeJob
+2019-04-23 17:56:54,741 INFO  [spring-startup]  c.a.s.i.hazelcast.HazelcastLifecycle Updating Hazelcast instance capabilities
+2019-04-23 17:56:54,984 WARN  [Caesium-1-2]  c.a.a.c.DefaultApplinkStatusService Unrecognized error while attempting to retrieve status of Application Link '3583e2f1-750d-3b1b-a657-755ad79ae29e'
+2019-04-23 17:57:04,344 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:57:04,356 INFO  [Caesium-1-2]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 3 search health checks
+2019-04-23 17:57:04,397 INFO  [pool-20-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:57:04,398 INFO  [pool-21-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:57:04,401 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:57:04,401 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:57:04,422 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:57:04,423 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: e703cac2-bce3-40cb-850a-615d158e35a9
+2019-04-23 17:57:04,433 INFO  [Caesium-1-2]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT5M
+2019-04-23 17:57:12,428 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:57:12,432 INFO  [pool-22-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:57:12,434 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:57:12,434 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:57:12,437 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:57:12,437 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 44b432e4-d7a5-4d99-b830-50decdae90a7
+2019-04-23 17:57:28,443 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:57:28,452 INFO  [pool-23-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:57:28,456 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:57:28,456 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:57:28,461 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:57:28,462 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: ea538298-97d9-4d2d-ba48-01ac6c3a5fe5
+2019-04-23 17:57:45,434 WARN  [http-nio-17990-exec-6] ctocm @1FULSM0x1076x4x0 1b4u2d3 XXX.XX.XX.XXX "GET /dashboard HTTP/1.1" com.atlassian.upm.pac.PacClientImpl Error when querying application info from MPAC: com.atlassian.marketplace.client.MpacException: org.apache.http.conn.ConnectTimeoutException: Connect to marketplace.atlassian.com:443 [marketplace.atlassian.com/34.193.88.221, marketplace.atlassian.com/35.168.52.211, marketplace.atlassian.com/52.44.244.254] failed: connect timed out
+2019-04-23 17:58:00,465 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:58:00,470 INFO  [pool-24-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:58:00,472 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:58:00,472 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:58:00,474 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:58:00,474 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 9118a5e2-8b95-46a1-8a14-5ae157f4e4e6
+2019-04-23 17:58:29,330 WARN  [http-nio-17990-exec-1] ctocm @1FULSM0x1078x17x0 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.util.contentcache.ContentCache 43: Caching has been temporarily disabled because there is not enough free space on /data/BITBUCKET/caches/scm/43 (3655688192 bytes free)
+2019-04-23 17:59:04,478 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 17:59:04,483 INFO  [pool-25-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 17:59:04,484 ERROR [Caesium-1-3]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 17:59:04,484 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 17:59:04,485 ERROR [Caesium-1-3]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 17:59:04,486 WARN  [Caesium-1-3]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 7e33fd2d-b899-470e-8f12-cd43f84db811
+2019-04-23 18:00:01,757 INFO  [http-nio-17990-exec-10] ctocm @1FULSM0x1080x24x1 1b4u2d3 XXX.XX.XX.XXX "GET /projects/KSDTBCS/repos/k1_dtbcs/settings HTTP/1.1" c.a.s.i.w.a.RepositoryAdminController Failed to resolve default branch. Cause: No default branch is defined
+2019-04-23 18:00:35,985 WARN  [analyticsEventProcessor:thread-1] ctocm @1FULSM0x1076x3x0 1b4u2d3 XXX.XX.XX.XXX "GET /mvc/home HTTP/1.1" c.a.a.c.h.r.RemoteHashingInstructionsReader Unable to read remote instructions with key 'uid.onewayhash'.
+2019-04-23 18:00:35,985 WARN  [analyticsEventProcessor:thread-1] ctocm @1FULSM0x1076x3x0 1b4u2d3 XXX.XX.XX.XXX "GET /mvc/home HTTP/1.1" c.a.a.c.h.BcryptAnalyticsEmailHasher No instructions for hashing could be found.
+2019-04-23 18:00:36,008 WARN  [Caesium-1-1]  c.a.a.c.h.r.RemoteHashingInstructionsReader Unable to read remote instructions with key 'uid.onewayhash'.
+2019-04-23 18:00:36,008 WARN  [Caesium-1-1]  c.a.a.c.h.BcryptAnalyticsEmailHasher No instructions for hashing could be found.
+2019-04-23 18:01:12,489 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:01:12,493 INFO  [pool-27-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:01:12,496 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:01:12,496 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:01:12,497 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:01:12,497 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: fd7c437f-3acc-4c5b-8cef-ea666b47e6e9
+2019-04-23 18:01:45,808 ERROR [Caesium-1-3]  c.a.scheduler.core.JobLauncher Scheduled job with ID 'IndexingAnalyticsJob' failed
+rx.exceptions.OnErrorNotImplementedException: java.net.ConnectException: Connection refused
+	at rx.observables.BlockingObservable$8.call(BlockingObservable.java:642)
+	at rx.observables.BlockingObservable$8.call(BlockingObservable.java:639)
+	at rx.observables.BlockingObservable$9.onError(BlockingObservable.java:673)
+	at rx.internal.operators.NotificationLite.accept(NotificationLite.java:147)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:528)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:665)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:639)
+	at com.atlassian.bitbucket.internal.search.indexing.analytics.IndexingAnalyticsJob.runJob(IndexingAnalyticsJob.java:50)
+	at com.atlassian.scheduler.core.JobLauncher.runJob(JobLauncher.java:153)
+	at com.atlassian.scheduler.core.JobLauncher.launchAndBuildResponse(JobLauncher.java:118)
+	at com.atlassian.scheduler.core.JobLauncher.launch(JobLauncher.java:97)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.launchJob(CaesiumSchedulerService.java:443)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.executeClusteredJob(CaesiumSchedulerService.java:438)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.executeClusteredJobWithRecoveryGuard(CaesiumSchedulerService.java:462)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.executeQueuedJob(CaesiumSchedulerService.java:390)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService$1.consume(CaesiumSchedulerService.java:285)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService$1.consume(CaesiumSchedulerService.java:282)
+	at com.atlassian.scheduler.caesium.impl.SchedulerQueueWorker.executeJob(SchedulerQueueWorker.java:65)
+	at com.atlassian.scheduler.caesium.impl.SchedulerQueueWorker.executeNextJob(SchedulerQueueWorker.java:59)
+	at com.atlassian.scheduler.caesium.impl.SchedulerQueueWorker.run(SchedulerQueueWorker.java:34)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:507)
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	... 1 common frames omitted
+2019-04-23 18:02:04,432 INFO  [Caesium-1-4]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 2 search health checks
+2019-04-23 18:02:04,439 INFO  [pool-30-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:02:04,446 INFO  [Caesium-1-4]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT5M
+2019-04-23 18:02:12,537 INFO  [io-pump:thread-7] ctocm @1FULSM0x1078x17x0 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.s.i.w.filters.StreamGuardFilter The remote client has aborted the connection
+2019-04-23 18:03:17,100 INFO  [Thread-4]  c.a.b.i.boot.log.BuildInfoLogger Bitbucket 5.13.1 has shut down
+2019-04-23 18:03:19,242 INFO  [localhost-startStop-2]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker thread has been shut down
+2019-04-23 18:03:20,471 INFO  [Gemini Blueprint context shutdown thread2]  c.a.b.internal.ssh.server.SshServer Stopping SSH server...
+2019-04-23 18:03:20,476 INFO  [Gemini Blueprint context shutdown thread2]  c.a.b.internal.ssh.server.SshServer Stopped SSH server successfully.
+2019-04-23 18:03:35,599 WARN  [localhost-startStop-2]  c.a.s.i.s.SchedulerLifecycle The following jobs could not be canceled. They will be killed when the JVM terminates: [PluginScheduler:com.atlassian.analytics.client.upload.RemoteFilterRead:job]
+2019-04-23 18:03:35,708 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET/shared
+2019-04-23 18:03:35,810 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET
+2019-04-23 18:05:02,324 INFO  [main]  o.s.boot.SpringApplication 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.12.RELEASE)
+
+
+2019-04-23 18:05:02,586 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Starting BitbucketServerApplication on GRNPRDBITBUCKET with PID 2588 (/bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/app/WEB-INF/classes started by root in /bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/bin)
+2019-04-23 18:05:02,587 INFO  [main]  c.a.b.i.b.BitbucketServerApplication No active profile set, falling back to default profiles: default
+2019-04-23 18:05:04,007 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger Starting Bitbucket 5.13.1 (2c2ed6e built on Tue Aug 21 10:41:42 IST 2018)
+2019-04-23 18:05:04,008 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger JVM: Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 1.8.0_181-b13
+2019-04-23 18:05:05,839 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Started BitbucketServerApplication in 4.292 seconds (JVM running for 7.477)
+2019-04-23 18:05:10,190 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET
+2019-04-23 18:05:16,535 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET/shared
+2019-04-23 18:05:18,654 WARN  [spring-startup]  com.hazelcast.instance.Node [192.168.122.1]:5701 [root] [3.7.4-atlassian-43] No join method is enabled! Starting standalone.
+2019-04-23 18:05:38,212 INFO  [spring-startup]  c.a.s.i.hook.DefaultHookService Hook callback socket listening on 127.0.0.1:38698
+2019-04-23 18:05:40,241 WARN  [spring-startup]  c.a.s.i.s.g.b.DefaultGitBinaryHelper /bitbucket/GIT_HOME/git-2.2.0/git is version 2.2.0. Bitbucket 6.0 will require Git 2.11.0 or higher.
+2019-04-23 18:05:40,319 INFO  [spring-startup]  c.a.s.i.s.g.t.DefaultTranscodeServer Callback socket listening at 127.0.0.1:44376
+2019-04-23 18:05:52,744 WARN  [ThreadPoolAsyncTaskExecutor::Thread 14]  c.a.p.s.s.util.ProductFilterUtil Couldn't detect product, will use ProductFilter.ALL
+2019-04-23 18:05:58,406 INFO  [ThreadPoolAsyncTaskExecutor::Thread 53]  c.a.b.internal.ssh.server.SshServer Using MINA NIO service factory
+2019-04-23 18:06:06,879 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle com.atlassian.oauth.atlassian-oauth-service-provider-plugin; it does not exist
+2019-04-23 18:06:08,689 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.de_DE; it does not exist
+2019-04-23 18:06:08,700 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.fr_FR; it does not exist
+2019-04-23 18:06:08,711 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.ja_JP; it does not exist
+2019-04-23 18:06:09,040 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Starting SSH server on port 7999...
+2019-04-23 18:06:09,142 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Started SSH server successfully.
+2019-04-23 18:06:09,649 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: SearchIndexCheck
+2019-04-23 18:06:09,651 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for StartupChecksJob
+2019-04-23 18:06:09,818 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: AuthenticationCheck
+2019-04-23 18:06:09,824 INFO  [spring-startup]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Event queue processor has been started
+2019-04-23 18:06:09,824 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for ElasticsearchSynchronizeJob
+2019-04-23 18:06:09,842 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: KnownIssueCheck
+2019-04-23 18:06:10,107 WARN  [Caesium-1-2]  c.a.a.c.DefaultApplinkStatusService Unrecognized error while attempting to retrieve status of Application Link '3583e2f1-750d-3b1b-a657-755ad79ae29e'
+2019-04-23 18:06:10,150 INFO  [spring-startup]  c.a.s.internal.scm.PluginScmService Bitbucket is using /bitbucket/GIT_HOME/git-2.2.0/git version 2.2.0
+2019-04-23 18:06:10,170 INFO  [spring-startup]  c.a.s.i.hazelcast.HazelcastLifecycle Updating Hazelcast instance capabilities
+2019-04-23 18:06:19,655 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:06:19,704 INFO  [Caesium-1-4]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:06:19,705 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:06:19,705 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:06:19,727 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:06:19,729 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 67f0c8bd-0e79-4777-b8b5-55d16659b764
+2019-04-23 18:06:19,814 INFO  [Caesium-1-3]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 3 search health checks
+2019-04-23 18:06:19,823 INFO  [pool-21-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:06:19,834 INFO  [Caesium-1-3]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT5M
+2019-04-23 18:06:27,733 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:06:27,746 INFO  [pool-22-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:06:27,935 WARN  [http-nio-17990-exec-8] ctocm @1IS97FUx1086x7x1 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.util.contentcache.ContentCache 43: Caching has been temporarily disabled because there is not enough free space on /data/BITBUCKET/caches/scm/43 (3656187904 bytes free)
+2019-04-23 18:06:28,248 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:06:28,249 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:06:28,250 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:06:28,251 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 21a3f72c-3a15-4784-87bd-9df668507b12
+2019-04-23 18:06:44,256 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:06:44,263 INFO  [pool-23-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:06:44,265 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:06:44,265 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:06:44,267 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:06:44,267 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 2f513807-ec64-432d-ab73-b7d568165f0a
+2019-04-23 18:07:02,397 WARN  [http-nio-17990-exec-5] ctocm @1IS97FUx1086x4x0 nvpzy9 XXX.XX.XX.XXX "GET /dashboard HTTP/1.1" com.atlassian.upm.pac.PacClientImpl Error when querying application info from MPAC: com.atlassian.marketplace.client.MpacException: org.apache.http.conn.ConnectTimeoutException: Connect to marketplace.atlassian.com:443 [marketplace.atlassian.com/52.44.244.254, marketplace.atlassian.com/34.193.88.221, marketplace.atlassian.com/35.168.52.211] failed: connect timed out
+2019-04-23 18:07:16,270 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:07:16,274 INFO  [pool-24-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:07:16,777 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:07:16,777 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:07:16,778 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:07:16,779 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 3b812d26-a8b0-4a22-9fdf-f3f9b6a1fdad
+2019-04-23 18:07:55,203 INFO  [http-nio-17990-exec-9] ctocm @1IS97FUx1087x42x1 nvpzy9 XXX.XX.XX.XXX "GET /projects/KSDTBCS/repos/k2_external_dtbcs_bus/settings HTTP/1.1" c.a.s.i.w.a.RepositoryAdminController Failed to resolve default branch. Cause: No default branch is defined
+2019-04-23 18:08:00,419 INFO  [threadpool:thread-2] ctocm @1IS97FUx1087x46x1 nvpzy9 XXX.XX.XX.XXX "DELETE /projects/KSDTBCS/repos/k2_external_dtbcs_bus HTTP/1.1" c.a.s.i.s.g.c.DeleteRepositoryCommand Successfully deleted repository directory /data/BITBUCKET/shared/data/repositories/124
+2019-04-23 18:08:00,466 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 124) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:08:00,487 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=124}, retries=0}, retrying in 60 s
+2019-04-23 18:08:07,930 INFO  [http-nio-17990-exec-3] ctocm @1IS97FUx1088x56x1 nvpzy9 XXX.XX.XX.XXX "GET /projects/KSDTBCS/repos/k1_dtbcs/settings HTTP/1.1" c.a.s.i.w.a.RepositoryAdminController Failed to resolve default branch. Cause: No default branch is defined
+2019-04-23 18:08:13,517 INFO  [threadpool:thread-3] ctocm @1IS97FUx1088x60x1 nvpzy9 XXX.XX.XX.XXX "DELETE /projects/KSDTBCS/repos/k1_dtbcs HTTP/1.1" c.a.s.i.s.g.c.DeleteRepositoryCommand Successfully deleted repository directory /data/BITBUCKET/shared/data/repositories/126
+2019-04-23 18:08:13,540 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 126) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:08:13,540 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=126}, retries=0}, retrying in 60 s
+2019-04-23 18:08:18,528 INFO  [http-nio-17990-exec-1] ctocm @1IS97FUx1088x70x1 nvpzy9 XXX.XX.XX.XXX "GET /projects/KSDTBCS/repos/k4_dtbcs_bbl/settings HTTP/1.1" c.a.s.i.w.a.RepositoryAdminController Failed to resolve default branch. Cause: No default branch is defined
+2019-04-23 18:08:20,782 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:08:20,786 INFO  [pool-25-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:08:20,788 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:08:20,788 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:08:20,789 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:08:20,789 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 0135bc79-b73b-4d2c-82d2-21b8dc94c14f
+2019-04-23 18:08:21,764 INFO  [threadpool:thread-2] ctocm @1IS97FUx1088x74x1 nvpzy9 XXX.XX.XX.XXX "DELETE /projects/KSDTBCS/repos/k4_dtbcs_bbl HTTP/1.1" c.a.s.i.s.g.c.DeleteRepositoryCommand Successfully deleted repository directory /data/BITBUCKET/shared/data/repositories/127
+2019-04-23 18:08:21,780 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 127) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:08:21,782 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=127}, retries=0}, retrying in 60 s
+2019-04-23 18:08:28,472 INFO  [threadpool:thread-2] ctocm @1IS97FUx1088x89x2 nvpzy9 XXX.XX.XX.XXX "DELETE /projects/KSDTBCS/repos/k4_dtbcs_techcom HTTP/1.1" c.a.s.i.s.g.c.DeleteRepositoryCommand Successfully deleted repository directory /data/BITBUCKET/shared/data/repositories/125
+2019-04-23 18:08:28,477 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 125) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:08:28,478 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=125}, retries=0}, retrying in 60 s
+2019-04-23 18:08:46,490 INFO  [io-pump:thread-8] ctocm @1IS97FUx1086x7x1 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.s.i.w.filters.StreamGuardFilter The remote client has aborted the connection
+2019-04-23 18:09:00,502 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 124) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:09:00,503 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=124}, retries=1}, retrying in 120 s
+2019-04-23 18:09:13,542 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 126) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:09:13,543 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=126}, retries=1}, retrying in 120 s
+2019-04-23 18:09:18,574 INFO  [http-nio-17990-exec-1] ctocm @1IS97FUx1089x150x0 nvpzy9 XXX.XX.XX.XXX "GET /projects/TFPIL/repos/k1_tf/settings HTTP/1.1" c.a.s.i.w.a.RepositoryAdminController Failed to resolve default branch. Cause: No default branch is defined
+2019-04-23 18:09:21,717 INFO  [threadpool:thread-4] ctocm @1IS97FUx1089x154x0 nvpzy9 XXX.XX.XX.XXX "DELETE /projects/TFPIL/repos/k1_tf HTTP/1.1" c.a.s.i.s.g.c.DeleteRepositoryCommand Successfully deleted repository directory /data/BITBUCKET/shared/data/repositories/122
+2019-04-23 18:09:21,724 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 122) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:09:21,724 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=122}, retries=0}, retrying in 60 s
+2019-04-23 18:09:21,790 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 127) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:09:21,791 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=127}, retries=1}, retrying in 120 s
+2019-04-23 18:09:28,480 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Repository with id: 125) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:09:28,481 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryDeletedIndexEvent{repositoryId=125}, retries=1}, retrying in 120 s
+2019-04-23 18:09:31,079 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Project with id: 4) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:09:31,079 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=ProjectDeletedIndexEvent{projectId=4}, retries=0}, retrying in 60 s
+2019-04-23 18:09:37,198 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Project with id: 123) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:09:37,199 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=ProjectDeletedIndexEvent{projectId=123}, retries=0}, retrying in 60 s
+2019-04-23 18:09:43,106 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for Project with id: 122) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:09:43,106 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=ProjectDeletedIndexEvent{projectId=122}, retries=0}, retrying in 60 s
+2019-04-23 18:09:50,667 WARN  [Caesium-1-1]  c.a.a.c.h.r.RemoteHashingInstructionsReader Unable to read remote instructions with key 'uid.onewayhash'.
+2019-04-23 18:09:50,667 WARN  [Caesium-1-1]  c.a.a.c.h.BcryptAnalyticsEmailHasher No instructions for hashing could be found.
+2019-04-23 18:09:50,694 WARN  [analyticsEventProcessor:thread-1] ctocm @1IS97FUx1086x3x0 nvpzy9 XXX.XX.XX.XXX "GET /mvc/home HTTP/1.1" c.a.a.c.h.r.RemoteHashingInstructionsReader Unable to read remote instructions with key 'uid.onewayhash'.
+2019-04-23 18:09:50,694 WARN  [analyticsEventProcessor:thread-1] ctocm @1IS97FUx1086x3x0 nvpzy9 XXX.XX.XX.XXX "GET /mvc/home HTTP/1.1" c.a.a.c.h.BcryptAnalyticsEmailHasher No instructions for hashing could be found.
+2019-04-23 18:09:54,374 INFO  [Thread-4]  c.a.b.i.boot.log.BuildInfoLogger Bitbucket 5.13.1 has shut down
+2019-04-23 18:09:56,515 INFO  [localhost-startStop-2]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker thread has been shut down
+2019-04-23 18:09:57,356 INFO  [Gemini Blueprint context shutdown thread1]  c.a.b.internal.ssh.server.SshServer Stopping SSH server...
+2019-04-23 18:09:57,362 INFO  [Gemini Blueprint context shutdown thread1]  c.a.b.internal.ssh.server.SshServer Stopped SSH server successfully.
+2019-04-23 18:09:58,081 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'rome.rome-1.0', not ACTIVE
+2019-04-23 18:09:58,082 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'org.scala-lang.scala-library-2.12.1.v20161205-104509-VFINAL-2787b47', not ACTIVE
+2019-04-23 18:09:58,082 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.springsource.org.jdom-1.1.0', not ACTIVE
+2019-04-23 18:09:58,083 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.springsource.net.jcip.annotations-1.0.0', not ACTIVE
+2019-04-23 18:09:58,093 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.util.concurrent.atlassian-util-concurrent-3.0.0', not ACTIVE
+2019-04-23 18:09:58,096 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.plugin.atlassian-spring-scanner-runtime', not ACTIVE
+2019-04-23 18:09:58,097 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.plugin.atlassian-spring-scanner-annotation', not ACTIVE
+2019-04-23 18:09:58,099 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.bundles.json-20070829.0.0.1', not ACTIVE
+2019-04-23 18:09:58,164 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:09:58,165 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:09:58,169 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:09:58,221 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:09:58,222 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:09:58,227 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:09:58,233 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:09:58,235 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:10:13,247 WARN  [localhost-startStop-2]  c.a.s.i.s.SchedulerLifecycle The following jobs could not be canceled. They will be killed when the JVM terminates: [PluginScheduler:com.atlassian.analytics.client.upload.RemoteFilterRead:job]
+2019-04-23 18:10:13,350 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET/shared
+2019-04-23 18:10:13,801 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET
+2019-04-23 18:10:26,622 INFO  [main]  o.s.boot.SpringApplication 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.12.RELEASE)
+
+
+2019-04-23 18:10:26,941 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Starting BitbucketServerApplication on GRNPRDBITBUCKET with PID 3093 (/bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/app/WEB-INF/classes started by root in /bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/bin)
+2019-04-23 18:10:26,942 INFO  [main]  c.a.b.i.b.BitbucketServerApplication No active profile set, falling back to default profiles: default
+2019-04-23 18:10:28,494 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger Starting Bitbucket 5.13.1 (2c2ed6e built on Tue Aug 21 10:41:42 IST 2018)
+2019-04-23 18:10:28,494 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger JVM: Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 1.8.0_181-b13
+2019-04-23 18:10:30,402 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Started BitbucketServerApplication in 4.683 seconds (JVM running for 7.856)
+2019-04-23 18:10:34,670 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET
+2019-04-23 18:10:40,500 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET/shared
+2019-04-23 18:10:42,643 WARN  [spring-startup]  com.hazelcast.instance.Node [192.168.122.1]:5701 [root] [3.7.4-atlassian-43] No join method is enabled! Starting standalone.
+2019-04-23 18:11:03,245 INFO  [spring-startup]  c.a.s.i.hook.DefaultHookService Hook callback socket listening on 127.0.0.1:40500
+2019-04-23 18:11:05,243 WARN  [spring-startup]  c.a.s.i.s.g.b.DefaultGitBinaryHelper /bitbucket/GIT_HOME/git-2.2.0/git is version 2.2.0. Bitbucket 6.0 will require Git 2.11.0 or higher.
+2019-04-23 18:11:05,418 INFO  [spring-startup]  c.a.s.i.s.g.t.DefaultTranscodeServer Callback socket listening at 127.0.0.1:34122
+2019-04-23 18:11:18,636 WARN  [ThreadPoolAsyncTaskExecutor::Thread 32]  c.a.p.s.s.util.ProductFilterUtil Couldn't detect product, will use ProductFilter.ALL
+2019-04-23 18:11:24,030 INFO  [ThreadPoolAsyncTaskExecutor::Thread 26]  c.a.b.internal.ssh.server.SshServer Using MINA NIO service factory
+2019-04-23 18:11:31,639 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle com.atlassian.oauth.atlassian-oauth-service-provider-plugin; it does not exist
+2019-04-23 18:11:33,298 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.de_DE; it does not exist
+2019-04-23 18:11:33,306 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.fr_FR; it does not exist
+2019-04-23 18:11:33,314 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.ja_JP; it does not exist
+2019-04-23 18:11:33,402 INFO  [spring-startup]  c.a.s.internal.scm.PluginScmService Bitbucket is using /bitbucket/GIT_HOME/git-2.2.0/git version 2.2.0
+2019-04-23 18:11:33,736 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Starting SSH server on port 7999...
+2019-04-23 18:11:33,831 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Started SSH server successfully.
+2019-04-23 18:11:34,394 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: AuthenticationCheck
+2019-04-23 18:11:34,415 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: SearchIndexCheck
+2019-04-23 18:11:34,415 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: KnownIssueCheck
+2019-04-23 18:11:34,603 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for StartupChecksJob
+2019-04-23 18:11:34,656 INFO  [spring-startup]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Event queue processor has been started
+2019-04-23 18:11:34,657 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for ElasticsearchSynchronizeJob
+2019-04-23 18:11:34,842 WARN  [Caesium-1-3]  c.a.a.c.DefaultApplinkStatusService Unrecognized error while attempting to retrieve status of Application Link '3583e2f1-750d-3b1b-a657-755ad79ae29e'
+2019-04-23 18:11:34,893 INFO  [spring-startup]  c.a.s.i.hazelcast.HazelcastLifecycle Updating Hazelcast instance capabilities
+2019-04-23 18:11:44,414 INFO  [Caesium-1-4]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 3 search health checks
+2019-04-23 18:11:44,476 INFO  [pool-20-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:11:44,508 INFO  [Caesium-1-4]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT5M
+2019-04-23 18:11:44,608 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:11:44,613 INFO  [pool-21-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:11:44,614 ERROR [Caesium-1-1]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:11:44,614 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:11:44,620 ERROR [Caesium-1-1]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:11:44,621 WARN  [Caesium-1-1]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 837a40c1-0822-4688-87d9-a61a24fd46fc
+2019-04-23 18:11:52,625 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:11:52,629 INFO  [pool-22-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:11:52,631 ERROR [Caesium-1-1]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:11:52,631 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:11:52,633 ERROR [Caesium-1-1]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:11:52,634 WARN  [Caesium-1-1]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 6ea8c899-c82a-443e-8db5-c71190d57442
+2019-04-23 18:12:08,638 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:12:08,645 INFO  [pool-23-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:12:08,648 ERROR [Caesium-1-4]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:12:08,648 INFO  [Caesium-1-4]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:12:08,652 ERROR [Caesium-1-4]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:12:08,652 WARN  [Caesium-1-4]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: a2d63eff-7516-4a0f-923f-4e23553a454a
+2019-04-23 18:12:40,656 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:12:40,666 INFO  [pool-24-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:12:40,670 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:12:40,670 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:12:40,671 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:12:40,672 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: f90d17cb-bf29-4c78-af09-5f16b56a7141
+2019-04-23 18:13:15,562 WARN  [UpmScheduler:thread-1]  com.atlassian.upm.pac.PacClientImpl Error when querying application info from MPAC: com.atlassian.marketplace.client.MpacException: org.apache.http.conn.ConnectTimeoutException: Connect to marketplace.atlassian.com:443 [marketplace.atlassian.com/52.44.244.254, marketplace.atlassian.com/34.193.88.221, marketplace.atlassian.com/35.168.52.211] failed: connect timed out
+2019-04-23 18:13:44,676 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:13:44,682 INFO  [pool-25-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:13:44,684 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:13:44,684 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:13:44,685 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:13:44,686 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 153f97e4-9857-4674-b21b-1c4cf8bcac1c
+2019-04-23 18:15:19,214 WARN  [Caesium-1-3]  c.a.a.c.h.r.RemoteHashingInstructionsReader Unable to read remote instructions with key 'uid.onewayhash'.
+2019-04-23 18:15:19,214 WARN  [Caesium-1-3]  c.a.a.c.h.BcryptAnalyticsEmailHasher No instructions for hashing could be found.
+2019-04-23 18:15:52,689 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:15:52,694 INFO  [pool-26-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:15:52,696 ERROR [Caesium-1-1]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:15:52,696 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:15:52,698 ERROR [Caesium-1-1]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:15:52,698 WARN  [Caesium-1-1]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 10fc34a0-7114-492a-a6e7-69a6f8dbafaf
+2019-04-23 18:16:25,612 ERROR [Caesium-1-2]  c.a.scheduler.core.JobLauncher Scheduled job with ID 'IndexingAnalyticsJob' failed
+rx.exceptions.OnErrorNotImplementedException: java.net.ConnectException: Connection refused
+	at rx.observables.BlockingObservable$8.call(BlockingObservable.java:642)
+	at rx.observables.BlockingObservable$8.call(BlockingObservable.java:639)
+	at rx.observables.BlockingObservable$9.onError(BlockingObservable.java:673)
+	at rx.internal.operators.NotificationLite.accept(NotificationLite.java:147)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:528)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:665)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:639)
+	at com.atlassian.bitbucket.internal.search.indexing.analytics.IndexingAnalyticsJob.runJob(IndexingAnalyticsJob.java:50)
+	at com.atlassian.scheduler.core.JobLauncher.runJob(JobLauncher.java:153)
+	at com.atlassian.scheduler.core.JobLauncher.launchAndBuildResponse(JobLauncher.java:118)
+	at com.atlassian.scheduler.core.JobLauncher.launch(JobLauncher.java:97)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.launchJob(CaesiumSchedulerService.java:443)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.executeClusteredJob(CaesiumSchedulerService.java:438)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.executeClusteredJobWithRecoveryGuard(CaesiumSchedulerService.java:462)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService.executeQueuedJob(CaesiumSchedulerService.java:390)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService$1.consume(CaesiumSchedulerService.java:285)
+	at com.atlassian.scheduler.caesium.impl.CaesiumSchedulerService$1.consume(CaesiumSchedulerService.java:282)
+	at com.atlassian.scheduler.caesium.impl.SchedulerQueueWorker.executeJob(SchedulerQueueWorker.java:65)
+	at com.atlassian.scheduler.caesium.impl.SchedulerQueueWorker.executeNextJob(SchedulerQueueWorker.java:59)
+	at com.atlassian.scheduler.caesium.impl.SchedulerQueueWorker.run(SchedulerQueueWorker.java:34)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.observables.BlockingObservable.subscribe(BlockingObservable.java:507)
+	... 16 common frames omitted
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	... 1 common frames omitted
+2019-04-23 18:16:44,507 INFO  [Caesium-1-2]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 2 search health checks
+2019-04-23 18:16:44,512 INFO  [pool-27-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:16:44,518 INFO  [Caesium-1-2]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT5M
+2019-04-23 18:20:08,701 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:20:08,707 INFO  [pool-28-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:20:08,714 ERROR [Caesium-1-1]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:20:08,714 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:20:08,715 ERROR [Caesium-1-1]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:20:08,715 WARN  [Caesium-1-1]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: da04764f-e33f-4d2c-bf54-341e564f6cc2
+2019-04-23 18:21:44,518 INFO  [Caesium-1-3]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 2 search health checks
+2019-04-23 18:21:44,526 INFO  [pool-29-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:21:44,535 INFO  [Caesium-1-3]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT10M
+2019-04-23 18:26:30,965 WARN  [http-nio-17990-exec-8] ctocm @1HKFTRBx1106x8x0 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.util.contentcache.ContentCache 43: Caching has been temporarily disabled because there is not enough free space on /data/BITBUCKET/caches/scm/43 (3658289152 bytes free)
+2019-04-23 18:28:40,717 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:28:40,721 INFO  [pool-30-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:28:40,722 ERROR [Caesium-1-3]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:28:40,722 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:28:40,724 ERROR [Caesium-1-3]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:28:40,724 WARN  [Caesium-1-3]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: e8d93616-8410-4b36-b239-e7660a52e239
+2019-04-23 18:30:04,040 INFO  [io-pump:thread-9] ctocm @1HKFTRBx1106x8x0 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.s.i.w.filters.StreamGuardFilter The remote client has aborted the connection
+2019-04-23 18:31:44,534 INFO  [Caesium-1-1]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 2 search health checks
+2019-04-23 18:31:44,541 INFO  [pool-31-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:31:44,556 INFO  [Caesium-1-1]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT20M
+2019-04-23 18:33:06,816 WARN  [http-nio-17990-exec-8] ctocm @1HKFTRBx1113x57x0 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.util.contentcache.ContentCache 43: Caching has been temporarily disabled because there is not enough free space on /data/BITBUCKET/caches/scm/43 (3658248192 bytes free)
+2019-04-23 18:34:08,453 INFO  [http-nio-17990-exec-5] ctocm @1HKFTRBx1114x81x1 1oq1ca0 XXX.XX.XX.XXX "POST /projects/K01A07_SCF/repos HTTP/1.1" c.a.s.i.s.git.command.CreateCommand Repository K01A07_SCF/testrepo (142) has been created and configured successfully
+2019-04-23 18:34:08,555 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for repository K01A07_SCF/testrepo (id: 142) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.unsafeSubscribe(Observable.java:8171)
+	at rx.internal.util.ScalarSynchronousObservable$2.call(ScalarSynchronousObservable.java:133)
+	at rx.internal.util.ScalarSynchronousObservable$2.call(ScalarSynchronousObservable.java:125)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:34:08,565 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryCreatedIndexEvent{repositoryId=142}, retries=0}, retrying in 60 s
+2019-04-23 18:35:08,570 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for repository K01A07_SCF/testrepo (id: 142) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.unsafeSubscribe(Observable.java:8171)
+	at rx.internal.util.ScalarSynchronousObservable$2.call(ScalarSynchronousObservable.java:133)
+	at rx.internal.util.ScalarSynchronousObservable$2.call(ScalarSynchronousObservable.java:125)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:35:08,571 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryCreatedIndexEvent{repositoryId=142}, retries=1}, retrying in 120 s
+2019-04-23 18:37:08,577 ERROR [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventWorker Indexing - Failed for repository K01A07_SCF/testrepo (id: 142) with error: java.net.ConnectException: Connection refused
+java.util.concurrent.ExecutionException: java.net.ConnectException: Connection refused
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357)
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1895)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:74)
+	at rx.internal.operators.OnSubscribeToObservableFuture$ToObservableFuture.call(OnSubscribeToObservableFuture.java:43)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.unsafeSubscribe(Observable.java:8171)
+	at rx.internal.util.ScalarSynchronousObservable$2.call(ScalarSynchronousObservable.java:133)
+	at rx.internal.util.ScalarSynchronousObservable$2.call(ScalarSynchronousObservable.java:125)
+	at rx.Observable$2.call(Observable.java:162)
+	at rx.Observable$2.call(Observable.java:154)
+	at rx.Observable.subscribe(Observable.java:8264)
+	at rx.Observable.subscribe(Observable.java:8231)
+	at rx.Observable.subscribe(Observable.java:8035)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvent(DefaultIndexEventQueueProcessor.java:204)
+	at com.atlassian.bitbucket.internal.search.indexing.event.DefaultIndexEventQueueProcessor.processEvents(DefaultIndexEventQueueProcessor.java:229)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.lang.Thread.run(Thread.java:748)
+	... 1 frame trimmed
+Caused by: java.net.ConnectException: Connection refused
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvent(DefaultConnectingIOReactor.java:171)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:145)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:348)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:191)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2019-04-23 18:37:08,578 INFO  [search-indexing:thread-1]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker instructed us to retry QueuedEvent{event=RepositoryCreatedIndexEvent{repositoryId=142}, retries=2}, retrying in 240 s
+2019-04-23 18:38:28,184 INFO  [io-pump:thread-9] ctocm @1HKFTRBx1113x57x0 XXX.XX.XX.XXX "POST /scm/k01a07_scf/scf_pilot.git/git-upload-pack HTTP/1.1" c.a.s.i.w.filters.StreamGuardFilter The remote client has aborted the connection
+2019-04-23 18:38:40,729 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:38:40,733 INFO  [pool-32-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:38:40,734 ERROR [Caesium-1-1]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:38:40,734 INFO  [Caesium-1-1]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:38:40,737 ERROR [Caesium-1-1]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:38:40,737 WARN  [Caesium-1-1]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 84ab9ca5-ee25-4049-8375-71ae1b46c3d4
+2019-04-23 18:39:40,220 INFO  [Thread-4]  c.a.b.i.boot.log.BuildInfoLogger Bitbucket 5.13.1 has shut down
+2019-04-23 18:39:42,369 INFO  [localhost-startStop-2]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker thread has been shut down
+2019-04-23 18:39:43,389 INFO  [Gemini Blueprint context shutdown thread1]  c.a.b.internal.ssh.server.SshServer Stopping SSH server...
+2019-04-23 18:39:43,412 INFO  [Gemini Blueprint context shutdown thread1]  c.a.b.internal.ssh.server.SshServer Stopped SSH server successfully.
+2019-04-23 18:39:44,427 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'rome.rome-1.0', not ACTIVE
+2019-04-23 18:39:44,428 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'org.scala-lang.scala-library-2.12.1.v20161205-104509-VFINAL-2787b47', not ACTIVE
+2019-04-23 18:39:44,428 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.springsource.org.jdom-1.1.0', not ACTIVE
+2019-04-23 18:39:44,428 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.springsource.net.jcip.annotations-1.0.0', not ACTIVE
+2019-04-23 18:39:44,438 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.util.concurrent.atlassian-util-concurrent-3.0.0', not ACTIVE
+2019-04-23 18:39:44,445 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.plugin.atlassian-spring-scanner-runtime', not ACTIVE
+2019-04-23 18:39:44,445 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.plugin.atlassian-spring-scanner-annotation', not ACTIVE
+2019-04-23 18:39:44,446 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.bundles.json-20070829.0.0.1', not ACTIVE
+2019-04-23 18:39:44,516 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:39:44,517 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:39:44,522 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:39:44,575 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:39:44,577 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:39:44,581 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:39:44,587 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:39:44,589 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:39:44,713 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET/shared
+2019-04-23 18:39:44,815 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET
+2019-04-23 18:53:22,993 INFO  [main]  o.s.boot.SpringApplication 
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::       (v1.5.12.RELEASE)
+
+
+2019-04-23 18:53:23,198 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Starting BitbucketServerApplication on GRNPRDBITBUCKET with PID 4750 (/bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/app/WEB-INF/classes started by root in /bitbucket/BITBUCKET_SW/atlassian-bitbucket-5.13.1/bin)
+2019-04-23 18:53:23,198 INFO  [main]  c.a.b.i.b.BitbucketServerApplication No active profile set, falling back to default profiles: default
+2019-04-23 18:53:24,762 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger Starting Bitbucket 5.13.1 (2c2ed6e built on Tue Aug 21 10:41:42 IST 2018)
+2019-04-23 18:53:24,762 INFO  [main]  c.a.b.i.boot.log.BuildInfoLogger JVM: Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 1.8.0_181-b13
+2019-04-23 18:53:26,728 INFO  [main]  c.a.b.i.b.BitbucketServerApplication Started BitbucketServerApplication in 4.996 seconds (JVM running for 8.041)
+2019-04-23 18:53:30,908 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET
+2019-04-23 18:53:36,725 INFO  [spring-startup]  c.a.s.internal.home.HomeLockAcquirer Successfully acquired lock on home directory /data/BITBUCKET/shared
+2019-04-23 18:53:38,808 WARN  [spring-startup]  com.hazelcast.instance.Node [192.168.122.1]:5701 [root] [3.7.4-atlassian-43] No join method is enabled! Starting standalone.
+2019-04-23 18:54:00,119 INFO  [spring-startup]  c.a.s.i.hook.DefaultHookService Hook callback socket listening on 127.0.0.1:39006
+2019-04-23 18:54:02,035 WARN  [spring-startup]  c.a.s.i.s.g.b.DefaultGitBinaryHelper /bitbucket/GIT_HOME/git-2.2.0/git is version 2.2.0. Bitbucket 6.0 will require Git 2.11.0 or higher.
+2019-04-23 18:54:02,116 INFO  [spring-startup]  c.a.s.i.s.g.t.DefaultTranscodeServer Callback socket listening at 127.0.0.1:37669
+2019-04-23 18:54:16,547 WARN  [ThreadPoolAsyncTaskExecutor::Thread 30]  c.a.p.s.s.util.ProductFilterUtil Couldn't detect product, will use ProductFilter.ALL
+2019-04-23 18:54:21,995 INFO  [ThreadPoolAsyncTaskExecutor::Thread 16]  c.a.b.internal.ssh.server.SshServer Using MINA NIO service factory
+2019-04-23 18:54:30,235 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle com.atlassian.oauth.atlassian-oauth-service-provider-plugin; it does not exist
+2019-04-23 18:54:31,919 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.de_DE; it does not exist
+2019-04-23 18:54:31,994 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.fr_FR; it does not exist
+2019-04-23 18:54:32,002 WARN  [spring-startup]  c.a.s.i.p.s.OsgiBundledPathScanner Cannot scan directory /com/atlassian/oauth/shared/servlet/ in bundle tac.bitbucket.languages.ja_JP; it does not exist
+2019-04-23 18:54:32,207 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Starting SSH server on port 7999...
+2019-04-23 18:54:32,361 INFO  [spring-startup]  c.a.b.internal.ssh.server.SshServer Started SSH server successfully.
+2019-04-23 18:54:32,867 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for StartupChecksJob
+2019-04-23 18:54:32,871 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: KnownIssueCheck
+2019-04-23 18:54:33,142 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: SearchIndexCheck
+2019-04-23 18:54:33,142 INFO  [spring-startup]  c.a.b.i.s.c.c.DefaultClusterJobManager Registering job for ElasticsearchSynchronizeJob
+2019-04-23 18:54:33,156 INFO  [spring-startup]  c.a.b.i.s.c.j.c.HealthCheckRunner New health check registered: AuthenticationCheck
+2019-04-23 18:54:33,199 INFO  [spring-startup]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Event queue processor has been started
+2019-04-23 18:54:33,399 WARN  [Caesium-1-4]  c.a.a.c.DefaultApplinkStatusService Unrecognized error while attempting to retrieve status of Application Link '3583e2f1-750d-3b1b-a657-755ad79ae29e'
+2019-04-23 18:54:33,475 INFO  [spring-startup]  c.a.s.internal.scm.PluginScmService Bitbucket is using /bitbucket/GIT_HOME/git-2.2.0/git version 2.2.0
+2019-04-23 18:54:33,518 INFO  [spring-startup]  c.a.s.i.hazelcast.HazelcastLifecycle Updating Hazelcast instance capabilities
+2019-04-23 18:54:42,880 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:54:42,928 INFO  [Caesium-1-2]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:54:42,930 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:54:42,930 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:54:42,954 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:54:42,954 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: b1ac6996-4fcd-4868-be5e-4ae9d7a60c20
+2019-04-23 18:54:43,151 INFO  [Caesium-1-3]  c.a.b.i.s.c.j.c.HealthCheckRunner Running up to 3 search health checks
+2019-04-23 18:54:43,183 INFO  [pool-21-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:54:43,192 INFO  [Caesium-1-3]  c.a.b.i.s.c.j.c.HealthCheckRunner Health checks will run again after PT5M
+2019-04-23 18:54:50,960 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:54:50,966 INFO  [pool-22-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:54:50,968 ERROR [Caesium-1-3]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:54:50,968 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:54:50,970 ERROR [Caesium-1-3]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:54:50,970 WARN  [Caesium-1-3]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 93c3336c-ef01-4ff5-8667-436857b83720
+2019-04-23 18:55:06,977 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:55:06,985 INFO  [pool-23-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:55:06,988 ERROR [Caesium-1-3]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:55:06,989 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:55:06,990 ERROR [Caesium-1-3]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:55:06,990 WARN  [Caesium-1-3]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: a32a33d8-0cae-4560-b0f6-7d51a0254d4f
+2019-04-23 18:55:29,875 WARN  [http-nio-17990-exec-3] ctocm @1YZXWMEx1134x10x0 123zw33 XXX.XX.XX.XXX "GET /dashboard HTTP/1.1" com.atlassian.upm.pac.PacClientImpl Error when querying application info from MPAC: com.atlassian.marketplace.client.MpacException: org.apache.http.conn.ConnectTimeoutException: Connect to marketplace.atlassian.com:443 [marketplace.atlassian.com/34.193.88.221, marketplace.atlassian.com/52.44.244.254, marketplace.atlassian.com/35.168.52.211] failed: connect timed out
+2019-04-23 18:55:38,993 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:55:38,997 INFO  [pool-24-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:55:38,998 ERROR [Caesium-1-3]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:55:38,998 INFO  [Caesium-1-3]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:55:38,999 ERROR [Caesium-1-3]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:55:39,000 WARN  [Caesium-1-3]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 88933ee2-220a-41fe-9795-faf7ac66d45f
+2019-04-23 18:56:43,005 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Attempting provisioning in startup job
+2019-04-23 18:56:43,009 INFO  [pool-25-thread-1]  c.a.b.s.s.t.DefaultElasticsearchConnectionTester Testing connection with Elasticsearch failed due to exception java.net.ConnectException: Connection refused
+2019-04-23 18:56:43,030 ERROR [Caesium-1-2]  c.a.b.i.s.c.s.p.AutomaticAuthenticationProvisioner Skipping automatic auth configuration: Elasticsearch instance is not available for connection.
+2019-04-23 18:56:43,030 INFO  [Caesium-1-2]  c.a.b.i.s.i.jobs.StartupChecksJob Running startup jobs for search
+2019-04-23 18:56:43,031 ERROR [Caesium-1-2]  c.a.b.i.s.i.IndexingSynchronizationService Unable to establish a connection to Elasticsearch during index synchronisation.
+2019-04-23 18:56:43,032 WARN  [Caesium-1-2]  c.a.b.i.s.c.cluster.ClusterJobRunner Job execution failed. Rescheduling. Job key: com.atlassian.bitbucket.internal.search.indexing.jobs.StartupChecksJob  Job id: 8d8af94e-61a8-4dd2-afd3-4ea2bb844a31
+2019-04-23 18:58:00,907 INFO  [Thread-4]  c.a.b.i.boot.log.BuildInfoLogger Bitbucket 5.13.1 has shut down
+2019-04-23 18:58:03,028 INFO  [localhost-startStop-2]  c.a.b.i.s.i.e.DefaultIndexEventQueueProcessor Worker thread has been shut down
+2019-04-23 18:58:04,032 INFO  [Gemini Blueprint context shutdown thread1]  c.a.b.internal.ssh.server.SshServer Stopping SSH server...
+2019-04-23 18:58:04,038 INFO  [Gemini Blueprint context shutdown thread1]  c.a.b.internal.ssh.server.SshServer Stopped SSH server successfully.
+2019-04-23 18:58:04,695 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'rome.rome-1.0', not ACTIVE
+2019-04-23 18:58:04,695 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'org.scala-lang.scala-library-2.12.1.v20161205-104509-VFINAL-2787b47', not ACTIVE
+2019-04-23 18:58:04,695 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.springsource.org.jdom-1.1.0', not ACTIVE
+2019-04-23 18:58:04,695 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.springsource.net.jcip.annotations-1.0.0', not ACTIVE
+2019-04-23 18:58:04,696 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.util.concurrent.atlassian-util-concurrent-3.0.0', not ACTIVE
+2019-04-23 18:58:04,698 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.plugin.atlassian-spring-scanner-runtime', not ACTIVE
+2019-04-23 18:58:04,699 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.plugin.atlassian-spring-scanner-annotation', not ACTIVE
+2019-04-23 18:58:04,700 WARN  [FelixStartLevel]  c.a.p.osgi.factory.OsgiBundlePlugin Cannot disable Bundle 'com.atlassian.bundles.json-20070829.0.0.1', not ACTIVE
+2019-04-23 18:58:04,898 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:58:04,914 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:58:04,925 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:58:05,164 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:58:05,166 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:58:05,177 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:58:05,217 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:58:05,222 WARN  [localhost-startStop-2]  c.a.p.osgi.factory.OsgiBundlePlugin OSGi container not running or undefined: Will not remove bundle listener and will not close package admin service
+2019-04-23 18:58:20,239 WARN  [localhost-startStop-2]  c.a.s.i.s.SchedulerLifecycle The following jobs could not be canceled. They will be killed when the JVM terminates: [PluginScheduler:com.atlassian.analytics.client.upload.RemoteFilterRead:job]
+2019-04-23 18:58:20,372 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET/shared
+2019-04-23 18:58:20,461 INFO  [localhost-startStop-2]  c.a.s.internal.home.HomeLockAcquirer Releasing lock on /data/BITBUCKET
